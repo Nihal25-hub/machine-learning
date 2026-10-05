@@ -46,9 +46,15 @@ data = {'island' , island,
         'flipper_length_mm' , flipper_length_mm,
         'body_mass_g' , body_mass_g,
         'gender' , gender}
-input_df =  pd.DataFrame( data, index = [0])
 
-input_df
+input_df = pd.DataFrame([data], columns=[
+    "island",
+    "gender",
+    "bill_length_mm",
+    "bill_depth_mm",
+    "flipper_length_mm",
+    "body_mass_g"
+])
         
         
         
