@@ -55,9 +55,9 @@ input_penguins = pd.concat([input_df , X] , axis=0)
 
 with st.expander('Input features'):
     st.write('**Input penguin**')
-    input_df
+    st.dataframe(input_df)
 st.write('**combined penguin**')
-input_penguins
+st.dataframe(input_penguins)
         
         
         
