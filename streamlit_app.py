@@ -53,11 +53,12 @@ input_df = pd.DataFrame(data , index=[0])
 
 input_penguins = pd.concat([input_df , X] , axis=0)
 
-with st.expander('Input features'):
-    st.write('**Input penguin**')
-    st.dataframe(input_df)
-st.write('**combined penguin**')
-st.dataframe(input_penguins)
+with st.expander('Input Features'):
+    st.write("**Input penguin**")
+    st.dataframe(input_df, use_container_width=True)
+
+    st.write("**Combined penguin**")
+    st.dataframe(input_penguins, use_container_width=True)
         
         
         
